@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Code Buddy</title>
+</head>
+<body>
+    <h2>🤖 AI Code Buddy</h2>
+    <form method="post">
+        <input type="text" name="user_input" placeholder="Ask your coding question..." required />
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if user_input %}
+    <p><strong>You:</strong> {{ user_input }}</p>
+    <p><strong>Gemini:</strong> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
+
